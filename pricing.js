@@ -80,6 +80,4 @@ function calcualtePrice(val){
     var totalPrice = time[val]*Type;
 
     $("#total").val(totalPrice.toFixed(2));
-    $("#total12").val(Math.round((totalPrice)/12).toFixed(2));
-    $("#total52").val(Math.round((totalPrice)/52).toFixed(2));
 }
