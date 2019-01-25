@@ -1,0 +1,49 @@
+.navbarTextPos {
+    text-align: right;
+}
+
+.bigCardImg{
+
+    height: 100%;
+   
+}
+.bodyBgColor {
+    background-color: #f4f4f4
+}
+
+.wrapper {
+    background-color: white;
+    
+}
+
+.nopadding {
+    padding: 0 ;
+    margin: 0 ;
+ }
+
+ .box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+.padding {
+    padding-bottom: 12 px;
+}
+.ul {
+    list-style: none;
+}
+
+.TextStyle {
+    
+    font-family: europa;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .5px;
+    line-height: 1.6em;
+}
+
+.hTags {
+    font-family: europa;
+    font-style: normal;
+}

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricingStyles.css">
+    <script src="pricing.js"></script>
+    
+
+    <title>Rental car</title>
+
+  </head>
+<body class="bodyBgColor" id="home">
+
+    <!-- Navbar menue -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-flex justify-content">
+    
+    
+        <!-- Rental car brand logo -->
+        <a class="navbar-brand order-1 " href="#home">Rental car</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav order-1">
+                <a class="nav-item nav-link text-white" href="#news">News</a>
+                <a class="nav-item nav-link text-white" href="#explore">Explore</a>
+                <a class="nav-item nav-link text-white" href="#about">About</a>
+                <a class="nav-item nav-link text-white" href="#contact" data-toggle="modal" data-target="#Contact">Contact</a>
+            </div>
+        </div>
+    
+    </nav>
+    
+    <!-- Form Modal -->
+    
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="E-mail">Contact Us</button>
+    <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="ContactForm" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">E-mail:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Phone-nr:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="+4676 00 00 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="role">Occupation:</label>
+                            <select class="form-control" id="message-text">
+                                <option value="student">Select Option</option>
+                                <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                                <option value="front end developer">Front End Developer</option>
+                                <option value="back end developer">Back End Developer</option>
+                                <option value="designer">Designer</option>
+                                <option value="student">Student</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+    
+                    </form>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Big Cards renders 2 headlines -->
+    <div class="container pt-4 text-primary">
+    
+        <h1 class="mt-5 hTags" id="headline-container"> Car catagories </h1>
+    
+        <!-- Small Cards renders first 6 cards-->
+    
+        <h1 class="mt-5 text-primary hTags" id="firstCard-container">Rental cars</h1>
+        <h3 class="text-primary hTags pb-4" id="news">Latest Models</h3>
+    
+        <!-- Small Cards renders 6 new  cards-->
+    
+        <div class="row pb-4 " id="card-container"> </div>
+    
+        <button class=" mb-3 btn btn-primary" id="aBtn">View more cars</button>
+    
+    </div>
+    
+    <div class="container pt-4 text-primary">
+    
+        <h1 class="mt-5 hTags" id="headline-container"> Renting prices</h1>
+        
+    
+    
+     </div>
+
+     <div class="container">
+            <div class="price-box">
+              <div class="row">
+                <div class="col-sm-6">
+                      <form class="form-horizontal form-pricing" role="form">
+      
+                        <div class="priceMenue">
+                          <h4 class="great">Estimate amount of km</h4>
+                          <span>Minimum 100km is required</span>
+                          <div class="col-sm-12">
+                            <div id="slider">
+                                    <select class="custom-select">
+                                            <option selected>Estimated</option>
+                                            <option value="1">100km or less</option>
+                                            <option value="2">300km or less </option>
+                                            <option value="3">500km or less </option>
+                                            <option value="3">500km or more </option>
+                                          </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="priceMenue">
+                          <h4 class="great">Duration</h4>
+                          <span>Please choose one</span>
+                          <div class="col-sm-12">
+                           <div>
+                               <select class="custom-select">
+                                <option selected>select duration</option>
+                                <option value="1">1 day</option>
+                                <option value="2">2 days</option>
+                                <option value="3">3 days</option>
+                                <option value="4">4 days</option>
+                                <option value="5">5 days</option>
+                                <option value="6">6 days</option>
+                                <option value="7">7 days</option>
+                                <option value="8">8 days</option>
+                                <option value="9">9 days</option>
+                                <option value="10">10 days</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="priceMenue">
+                          <h4 class="great">Type</h4>
+                          <span>Please choose one </span>
+                            <input name="sliderVal" type="hidden" id="sliderVal" value='0' readonly="readonly" />
+                      <input name="Duration" type="hidden" id="Duration" value='Duration' readonly="readonly" />
+                      <input name="Type" type="hidden" id="Type" value='quarterly' readonly="readonly" />
+                             <div>
+                                    <div id="slider">
+                                            <select class="custom-select">
+                                                    <option selected>Select type</option>
+                                                    <option value="1">Small car</option>
+                                                    <option value="2">Van</option>
+                                                    <option value="3">Minibus</option>
+                                                  </select>
+                                    </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="price-form">
+      
+                        <div class="form-group">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <label for="amount" class="control-label">Total price ($): </label>
+                                <span class="helpText">Amount that you need to pay</span>
+                              </div>
+                              
+                              <div class="col-sm-6">
+                                  <input type="hidden" id="amount" class="form-control">
+                                  <!-- <p class="price lead" id="total"></p> -->
+                                  <input class="price lead" name="totalprice" type="text" id="total" disabled="disabled" style="" />
+                                    
+                                  <div style="margin-top:30px"></div>
+                                  <hr class="style">
+
+                                  <div class="custom-file col-sm-12">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Upload ID</label>
+                                      </div>
+                                      
+              
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                      <button type="submit" class="btn btn-primary btn-lg btn-block">Confirm <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+                          
+                          </div>
+                          </div>
+                        
+                          
+                               
+                            </div>
+                          </div>
+      
+                        </div>
+      
+                      </form>
+                  </div>
+                
+              </div>
+      
+                </div>
+      
+            </div>
+            
+          <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <!-- Footer -->
+    
+    
+    
+    <footer id="explore">
+    
+        <!-- Footer Info -->
+    
+    
+        <div class="  navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content  mb-0">
+            <div class="row text-white">
+                <div class="col col-sm-12 col-md-4 col-lg-2">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-primary">
+                            <h5 class="hTags">Information</h5>
+                        </button>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu bg-primary">
+                            <a class="dropdown-item text-white" href="#">About Us</a>
+                            <a class="dropdown-item text-white" href="#">Work With Us</a>
+                            <a class="dropdown-item text-white" href="#">Privacy Policy</a>
+                            <a class="dropdown-item text-white" href="#">Terms and Conditions</a>
+                            <a class="dropdown-item text-white" href="#">Press Enquiries</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Footer Customer Service -->
+    
+                <div class=" col-sm-12 col-md-6 col-lg-2">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-primary">
+                            <h5 class="hTags">
+                                Customer service
+                            </h5>
+                        </button>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu bg-primary">
+                            <a class="dropdown-item text-white" href="#" data-toggle="modal" data-target="#Contact">Contact Us</a>
+                            <a class="dropdown-item text-white" href="#">Ordering and Payment</a>
+                            <a class="dropdown-item text-white" href="#">Shipping</a>
+                            <a class="dropdown-item text-white" href="#">Returns</a>
+                            <a class="dropdown-item text-white" href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Footer Customer About -->
+    
+    
+                <div class=" col-sm-12 col-md-8 col-lg-6">
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#About" aria-controls="About" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  " id="About">
+                        <div>
+                            <h5 class="hTags" id="about"> About</h5>
+    
+                            <p class="TextStyle">
+                                
+Rental car is one of the foremost car rental companies online in sweden, based on market-leading platforms
+We deliver user-friendly solutions to our customers 24h / 7. Find your nearest Car Pickup site.
+                            
+                            </p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    </footer>
+    
+    <!-- My JavaScript -->
+    <script src="Headlines.js"></script>
+    <script src="Articles.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

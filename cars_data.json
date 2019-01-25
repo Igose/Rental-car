@@ -1,0 +1,34 @@
+{
+	"headlines": [{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ECAR.doi.320.high.imageSmallSideProfileNodePath.png/1541616119515.png",
+		"Title": "Small Car",
+		"Text": "Rent a small car for your next trip"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/SVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248404065.png",
+		"Title": "Van",
+		"Text": "Rent a spacious van for long trips"}, 
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/OVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248367665.png",
+		"Title": "Mini bus",
+		"Text": "Rest a mini bus for group events "}],
+	"articles": [
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/ECAR.doi.320.high.imageSmallSideProfileNodePath.png/1541616119515.png",
+		"Text": "Small car"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/CARS/CCAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248348651.png",
+		"Text": "Small car"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/MVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248359154.png",
+		"Text": "Van"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/SVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248404065.png",
+		"Text": "Van"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/RVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248367196.png",
+		"Text": " MIni bus"},
+	{
+		"imageUrl": "https://www.alamo.com/alamoData/vehicle/bookingCountries/US/VANS/OVAR.doi.320.high.imageSmallSideProfileNodePath.png/1522248367665.png",
+		"Text": " MIni bus"
+		}]
+}
