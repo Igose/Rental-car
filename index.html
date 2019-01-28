@@ -116,7 +116,7 @@
     
      </div>
 
-     <div class="container">
+     <div class="container" >
             <div class="price-box">
               <div class="row">
                 <div class="col-sm-6">
@@ -127,12 +127,12 @@
                           <span>Minimum 100km is required</span>
                           <div class="col-sm-12">
                             <div id="slider">
-                                    <select class="custom-select">
+                                    <select class="custom-select" id="km">
                                             <option selected>Estimated</option>
-                                            <option value="1">100km or less</option>
-                                            <option value="2">300km or less </option>
-                                            <option value="3">500km or less </option>
-                                            <option value="3">500km or more </option>
+                                            <option value="15">100km or less</option>
+                                            <option value="30">300km or less </option>
+                                            <option value="45">500km or less </option>
+                                            <option value="100">500km or more </option>
                                           </select>
                             </div>
                           </div>
@@ -142,18 +142,18 @@
                           <span>Please choose one</span>
                           <div class="col-sm-12">
                            <div>
-                               <select class="custom-select">
+                               <select class="custom-select" id="duration">
                                 <option selected>select duration</option>
-                                <option value="1">1 day</option>
-                                <option value="2">2 days</option>
-                                <option value="3">3 days</option>
-                                <option value="4">4 days</option>
-                                <option value="5">5 days</option>
-                                <option value="6">6 days</option>
-                                <option value="7">7 days</option>
-                                <option value="8">8 days</option>
-                                <option value="9">9 days</option>
-                                <option value="10">10 days</option>
+                                <option value="10">1 day</option>
+                                <option value="20">2 days</option>
+                                <option value="30">3 days</option>
+                                <option value="40">4 days</option>
+                                <option value="50">5 days</option>
+                                <option value="60">6 days</option>
+                                <option value="70">7 days</option>
+                                <option value="80">8 days</option>
+                                <option value="90">9 days</option>
+                                <option value="100">10 days</option>
                               </select>
                             </div>
                           </div>
@@ -162,15 +162,15 @@
                           <h4 class="great">Type</h4>
                           <span>Please choose one </span>
                             <input name="sliderVal" type="hidden" id="sliderVal" value='0' readonly="readonly" />
-                      <input name="Duration" type="hidden" id="Duration" value='Duration' readonly="readonly" />
+                      <input name="Duration" type="hidden"  value='Duration' readonly="readonly" />
                       <input name="Type" type="hidden" id="Type" value='quarterly' readonly="readonly" />
                              <div>
                                     <div id="slider">
-                                            <select class="custom-select">
+                                            <select class="custom-select" id="carType">
                                                     <option selected>Select type</option>
                                                     <option value="1">Small car</option>
-                                                    <option value="2">Van</option>
-                                                    <option value="3">Minibus</option>
+                                                    <option value="1.2">Van</option>
+                                                    <option value="1.7">Minibus</option>
                                                   </select>
                                     </div>
                         </div>
@@ -178,36 +178,40 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="price-form">
+                      
       
-                        <div class="form-group">
-                            <div class="row">
-                              <div class="col-sm-6">
-                                <label for="amount" class="control-label">Total price ($): </label>
-                                <span class="helpText">Amount that you need to pay</span>
-                              </div>
+                        
+                            <div class="row price-form" >
+                             
                               
-                              <div class="col-sm-6">
-                                  <input type="hidden" id="amount" class="form-control">
-                                  <!-- <p class="price lead" id="total"></p> -->
-                                  <input class="price lead" name="totalprice" type="text" id="total" disabled="disabled" style="" />
-                                    
-                                  <div style="margin-top:30px"></div>
+                              <div class="col-lg">
+                                  
+                                    <h5 class="mt-5 hTags text-primary">Total amount you need to pay</h5>
+                                     
+                                    <div class="input-group">
+                                            <button id="first" type="button" class="btn-primary" onClick="calculatePrice()">Clculate</button>
+                                      
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">$</span>
+                                              <span class="input-group-text"id="price">0.00</span>
+                                            </div>
+                                          </div>
+                                  <div style="margin-top:30px">
+                                  
                                   <hr class="style">
 
                                   <div class="custom-file col-sm-12">
-                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <input type="file" class="custom-file-input"  id="customFile">
                                         <label class="custom-file-label" for="customFile">Upload ID</label>
                                       </div>
-                                      
-              
-                                <div class="form-group">
-                                    <div class="col-sm-12">
+                                      <div class="form-group">
+
+                                    <div class="col-sm-12" style="margin-top:30px">
                                       <button type="submit" class="btn btn-primary btn-lg btn-block">Confirm <span class="glyphicon glyphicon-chevron-right"></span></button>
                                     </div>
                                 </div>
                               </div>
-                          </div>
+                          
                           </div>
                           
                           </div>
@@ -218,7 +222,7 @@
                             </div>
                           </div>
       
-                        </div>
+                        
       
                       </form>
                   </div>
